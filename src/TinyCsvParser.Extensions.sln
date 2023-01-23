@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox", "Sandbox\Sandbox.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyCsvParser.Extensions.Optional", "TinyCsvParser.Extensions.Optional\TinyCsvParser.Extensions.Optional.csproj", "{F82E7598-C3C9-477C-9D09-2180106B4A90}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyCsvParser.Extensions.Optional.Tests", "TinyCsvParser.Extensions.Optional.Tests\TinyCsvParser.Extensions.Optional.Tests.csproj", "{93F11FEE-BD23-4A7A-907E-D27E0D0DA8DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -16,6 +18,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{66BA916A-6E51-4169-88E5-5B38DAE41702} = {8D193D0B-C499-4792-ABEE-6A7BD82A15E7}
 		{F82E7598-C3C9-477C-9D09-2180106B4A90} = {FA2A214C-96A5-45CC-BC7D-F9A07ACDC831}
+		{93F11FEE-BD23-4A7A-907E-D27E0D0DA8DA} = {FA2A214C-96A5-45CC-BC7D-F9A07ACDC831}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{66BA916A-6E51-4169-88E5-5B38DAE41702}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -26,5 +29,9 @@ Global
 		{F82E7598-C3C9-477C-9D09-2180106B4A90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F82E7598-C3C9-477C-9D09-2180106B4A90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F82E7598-C3C9-477C-9D09-2180106B4A90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93F11FEE-BD23-4A7A-907E-D27E0D0DA8DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93F11FEE-BD23-4A7A-907E-D27E0D0DA8DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93F11FEE-BD23-4A7A-907E-D27E0D0DA8DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93F11FEE-BD23-4A7A-907E-D27E0D0DA8DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

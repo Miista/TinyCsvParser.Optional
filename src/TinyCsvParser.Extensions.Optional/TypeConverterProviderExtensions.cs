@@ -9,6 +9,8 @@ namespace TinyCsvParser.Extensions.Optional
     {
         public static ITypeConverterProvider AddOptional(this TypeConverterProvider typeConverterProvider)
         {
+            if (typeConverterProvider == null) throw new ArgumentNullException(nameof(typeConverterProvider));
+            
             var registeredTypeConvertersField = typeof(TypeConverterProvider)
                                                     .GetField("typeConverters", BindingFlags.Instance | BindingFlags.NonPublic)
                                                 ?? throw new InvalidOperationException(
