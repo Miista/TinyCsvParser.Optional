@@ -7,4 +7,13 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Optional" Version="4.0.0" />
+      <PackageReference Include="TinyCsvParser" Version="2.7.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\TinyCsvParser.Extensions.Optional\TinyCsvParser.Extensions.Optional.csproj" />
+    </ItemGroup>
+
 </Project>
