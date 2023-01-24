@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using TinyCsvParser.TypeConverter;
 
-namespace TinyCsvParser.Extensions.Optional
+namespace TinyCsvParser.Optional
 {
     public static class TypeConverterProviderExtensions
     {

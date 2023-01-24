@@ -23,7 +23,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\TinyCsvParser.Extensions.Optional\TinyCsvParser.Extensions.Optional.csproj" />
+      <ProjectReference Include="..\TinyCsvParser.Optional\TinyCsvParser.Optional.csproj" />
     </ItemGroup>
 
 </Project>

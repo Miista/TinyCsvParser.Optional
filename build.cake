@@ -1,11 +1,11 @@
 var target = Argument("target", "Default");
 
-var solutionFile = "./src/TinyCsvParser.Extensions.Optional.sln";
+var solutionFile = "./src/TinyCsvParser.Optional.sln";
 var packages = new List<Package>
 {
   new Package
   {
-    Project = "TinyCsvParser.Extensions.Optional",
+    Project = "TinyCsvParser.Optional",
     Targets = new []{"netstandard2.0"}
   }
 };

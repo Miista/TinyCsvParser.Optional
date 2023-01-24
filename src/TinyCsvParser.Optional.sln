@@ -6,9 +6,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Feature", "2. Feature", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox", "Sandbox\Sandbox.csproj", "{66BA916A-6E51-4169-88E5-5B38DAE41702}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyCsvParser.Extensions.Optional", "TinyCsvParser.Extensions.Optional\TinyCsvParser.Extensions.Optional.csproj", "{F82E7598-C3C9-477C-9D09-2180106B4A90}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyCsvParser.Optional", "TinyCsvParser.Optional\TinyCsvParser.Optional.csproj", "{F82E7598-C3C9-477C-9D09-2180106B4A90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyCsvParser.Extensions.Optional.Tests", "TinyCsvParser.Extensions.Optional.Tests\TinyCsvParser.Extensions.Optional.Tests.csproj", "{93F11FEE-BD23-4A7A-907E-D27E0D0DA8DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyCsvParser.Optional.Tests", "TinyCsvParser.Optional.Tests\TinyCsvParser.Optional.Tests.csproj", "{93F11FEE-BD23-4A7A-907E-D27E0D0DA8DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Tooling", "0. Tooling", "{49D66206-0BFD-46FF-890E-933AE76633DD}"
+	ProjectSection(SolutionItems) = preProject
+		..\build.cake = ..\build.cake
+		..\nuget\TinyCsvParser.Optional.nuspec = ..\nuget\TinyCsvParser.Optional.nuspec
+		..\README.md = ..\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

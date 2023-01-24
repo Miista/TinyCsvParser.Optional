@@ -3,7 +3,7 @@
 using System.Text;
 using Optional;
 using TinyCsvParser;
-using TinyCsvParser.Extensions.Optional;
+using TinyCsvParser.Optional;
 using TinyCsvParser.Mapping;
 using TinyCsvParser.TypeConverter;
 
@@ -46,13 +46,36 @@ namespace Sandbox
 
     public class Program
     {
+        // Entity
+        private class Person
+        {
+            public string FirstName { get; set; }
+    
+            public string LastName { get; set; }
+    
+            public Option<DateTime> BirthDate { get; set; }
+        }
+
+        // Mapping
+        private class CsvPersonMapping : CsvMapping<Person>
+        {
+            public CsvPersonMapping(ITypeConverterProvider typeConverterProvider) : base(typeConverterProvider)
+            {
+                MapProperty(0, x => x.FirstName);
+                MapProperty(1, x => x.LastName);
+                MapProperty(2, x => x.BirthDate);
+            }
+        }
+        
         public static void Main(string[] args)
         {
             var options = new CsvParserOptions(skipHeader: false, fieldsSeparator: ',');
             var typeConverterProvider = new TypeConverterProvider().AddOptional();
-            var parser = new CsvParser<Data>(options, new Data.Mapping(typeConverterProvider));
+            // var parser = new CsvParser<Data>(options, new Data.Mapping(typeConverterProvider));
+            var parser = new CsvParser<Person>(options, new CsvPersonMapping(typeConverterProvider));
             var readerOptions = new CsvReaderOptions(new[] { ";" });
-            var results = parser.ReadFromString(readerOptions, $"0,null,null,null,null;null,2,null,null,null;null,null,{Guid.Empty},null,false").ToList();
+            // var results = parser.ReadFromString(readerOptions, $"0,null,null,null,null;null,2,null,null,null;null,null,{Guid.Empty},null,false").ToList();
+            var results = parser.ReadFromString(readerOptions, $"Philipp,Wagner,null").ToList();
 
             Console.WriteLine($"Results: {results.Count}");
             foreach (var result in results)

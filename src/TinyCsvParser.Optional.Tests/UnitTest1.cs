@@ -5,7 +5,7 @@ using TinyCsvParser.Mapping;
 using TinyCsvParser.TypeConverter;
 using Xunit;
 
-namespace TinyCsvParser.Extensions.Optional.Tests
+namespace TinyCsvParser.Optional.Tests
 {
     public class UnitTest1
     {

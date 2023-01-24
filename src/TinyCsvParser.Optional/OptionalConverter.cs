@@ -2,7 +2,7 @@ using System;
 using Optional;
 using TinyCsvParser.TypeConverter;
 
-namespace TinyCsvParser.Extensions.Optional
+namespace TinyCsvParser.Optional
 {
     public class OptionalConverter<T> : ITypeConverter<Option<T>>
     {
