@@ -15,6 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Tooling", "0. Tooling", 
 		..\build.cake = ..\build.cake
 		..\nuget\TinyCsvParser.Optional.nuspec = ..\nuget\TinyCsvParser.Optional.nuspec
 		..\README.md = ..\README.md
+		..\LICENSE = ..\LICENSE
 	EndProjectSection
 EndProject
 Global

@@ -13,6 +13,7 @@
     <description>A set of type converters for TinyCsvParser which supports parsing options.</description>
     <copyright>Copyright 2023</copyright>
     <tags>TinyCsvParser Parse Option Optional Converter Mapping</tags>
+    <readme>docs\README.md</readme>
     <releaseNotes>Initial release</releaseNotes>
 
     <dependencies>
@@ -23,5 +24,6 @@
   <files>
     <file src="netstandard2.0\*.dll" target="lib\netstandard2.0" />
     <file src="netstandard2.0\*.xml" target="lib\netstandard2.0" />
+    <file src="..\..\..\..\README.md" target="docs\" />
   </files>
 </package>
