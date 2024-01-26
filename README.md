@@ -1,4 +1,5 @@
-[MIT License]: https://opensource.org/licenses/MIT
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![NuGet version](https://badge.fury.io/nu/TinyCsvParser.Optional.svg)](https://www.nuget.org/packages/TinyCsvParser.Optional)
 
 # TinyCsvParser.Optional
 
@@ -54,4 +55,4 @@ Console.WriteLine(result[0].Result.BirthDate); // Writes None
 
 ## License
 
-The library is released under terms of the [MIT License].
+This project is licensed under the MIT license. See the [LICENSE](LICENSE) file for more info.
